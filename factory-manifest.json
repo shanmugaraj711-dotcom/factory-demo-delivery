@@ -1,0 +1,9 @@
+{
+  "project_name": "factory-demo-delivery",
+  "delivery_mode": "demo",
+  "source": "Golden-reference Project Factory V2",
+  "generator_model": "gemini-3.5-flash-lite",
+  "validation": "passed",
+  "deployment": "Vercel production",
+  "purpose": "isolated destination proof"
+}
