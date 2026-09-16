@@ -3,487 +3,67 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#050507">
-<meta name="description" content="Shanmugaraj — a creator's calling. AI products, automations and systems built with purpose. What if your ideas never died?">
+<meta name="theme-color" content="#05070b">
+<meta name="description" content="Shanmugaraj — AI products, automations, apps and digital systems built with purpose.">
 <meta name="author" content="Shanmugaraj">
-<meta property="og:title" content="shanmugaraj.dev — What if your ideas never died?">
-<meta property="og:description" content="From a single spark to real-world impact. AI, automations, apps and more — built with purpose.">
+<meta property="og:title" content="shanmugaraj.dev — Build What Matters">
+<meta property="og:description" content="AI, automations, apps and digital products built with purpose.">
 <meta property="og:type" content="website">
-<title>shanmugaraj.dev — What if your ideas never died?</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23050507'/%3E%3Cpath d='M16 5c1 5.4 5 7 5 11.6A5 5 0 0 1 11 16.6C11 13.4 13 12 14.6 9.4 15.6 7.8 16 6.8 16 5Z' fill='%23ff6a1a'/%3E%3C/svg%3E">
+<title>shanmugaraj.dev — Build What Matters</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2305070b'/%3E%3Cpath d='M7 20 15 5l4 8 6 2-11 12-2-8z' fill='%23ff8a3d'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- ============ icon + illustration sprite ============ -->
-<svg class="sprite" aria-hidden="true" focusable="false" width="0" height="0">
-  <defs>
-    <linearGradient id="gWarm" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#4a1a06"/><stop offset=".45" stop-color="#ff6a1a"/><stop offset="1" stop-color="#ffd39a"/>
-    </linearGradient>
-    <linearGradient id="gCool" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#101a3a"/><stop offset=".6" stop-color="#3f6bff"/><stop offset="1" stop-color="#9ec3ff"/>
-    </linearGradient>
-    <linearGradient id="gGreen" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#06301c"/><stop offset=".6" stop-color="#1f9d5c"/><stop offset="1" stop-color="#8bf0b6"/>
-    </linearGradient>
-  </defs>
-
-  <!-- icons -->
-  <symbol id="ic-flame" viewBox="0 0 24 24"><path d="M12 2c.9 5.2 5.2 7 5.2 12a5.2 5.2 0 0 1-10.4 0c0-3 1.8-4.4 3.4-6.8C11.1 5.6 11.8 3.8 12 2Z" fill="currentColor"/><path d="M12 21a3.2 3.2 0 0 0 3.2-3.2c0-1.9-1.4-2.9-3.2-5.2-1.8 2.3-3.2 3.3-3.2 5.2A3.2 3.2 0 0 0 12 21Z" fill="#fff" opacity=".28"/></symbol>
-  <symbol id="ic-arrow" viewBox="0 0 24 24"><path d="M4.5 12h13.5M12.5 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="ic-arrow-ne" viewBox="0 0 24 24"><path d="M8 16 16 8M9.6 8H16v6.4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="ic-play" viewBox="0 0 24 24"><path d="M8.5 5.4 18.4 12l-9.9 6.6z" fill="currentColor"/></symbol>
-  <symbol id="ic-spark" viewBox="0 0 24 24"><path d="M12 1.6l2.3 8.1L22.4 12l-8.1 2.3L12 22.4l-2.3-8.1L1.6 12l8.1-2.3z" fill="currentColor"/></symbol>
-  <symbol id="ic-cross" viewBox="0 0 24 24"><path d="M12 1.5v21M4.6 8.4h14.8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
-  <symbol id="ic-bag" viewBox="0 0 24 24"><path d="M5.6 7.4h12.8L19.6 21H4.4L5.6 7.4Z" fill="currentColor" opacity=".85"/><path d="M9 7.6V6a3 3 0 0 1 6 0v1.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
-  <symbol id="ic-cube" viewBox="0 0 24 24"><path d="M12 2.4 21 7.4v9.2L12 21.6 3 16.6V7.4l9-5Z" fill="none" stroke="currentColor" stroke-width="1.25"/><path d="M3 7.4l9 5 9-5M12 12.4v9.2" fill="none" stroke="currentColor" stroke-width="1.25"/></symbol>
-  <symbol id="ic-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.25"/><path d="M3 12h18M12 3c2.5 2.6 3.9 5.7 3.9 9s-1.4 6.4-3.9 9c-2.5-2.6-3.9-5.7-3.9-9S9.5 5.6 12 3Z" fill="none" stroke="currentColor" stroke-width="1.25"/></symbol>
-  <symbol id="ic-android" viewBox="0 0 24 24"><path d="M6.4 10.6h11.2V17a2.2 2.2 0 0 1-2.2 2.2H8.6A2.2 2.2 0 0 1 6.4 17v-6.4Z" fill="currentColor"/><path d="M6.7 9.6C7.3 6.9 9.4 5 12 5s4.7 1.9 5.3 4.6H6.7Z" fill="currentColor"/><circle cx="9.6" cy="7.8" r=".75" fill="#0b0910"/><circle cx="14.4" cy="7.8" r=".75" fill="#0b0910"/><path d="M7.6 5.4 6.3 3.7M16.4 5.4l1.3-1.7" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></symbol>
-  <symbol id="ic-whatsapp" viewBox="0 0 24 24"><path d="M12 2.2A9.8 9.8 0 0 0 3.6 17.2L2.2 21.8l4.7-1.3A9.8 9.8 0 1 0 12 2.2Zm0 17.8c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-2.8.8.8-2.7-.2-.3a8 8 0 1 1 6.6 3.5Z" fill="currentColor"/><path d="M9.4 8.6c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 1.9 3 4.6 4.1 2.2.9 2.7.7 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3l-1.6-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5 0-.2 0-.3-.1-.5l-.8-1.6Z" fill="#fff"/></symbol>
-  <symbol id="ic-x" viewBox="0 0 24 24"><path d="M18.4 2.2h3.1l-6.8 7.8L23 21.8h-6.4l-4.4-5.9-5 5.9H4.1l7.3-8.3L1.7 2.2h6.5l4 5.5 4.2-5.5Zm-1.1 17.7h1.7L7.6 3.9H5.8l11.5 16Z" fill="currentColor"/></symbol>
-  <symbol id="ic-github" viewBox="0 0 24 24"><path d="M12 1.8a10.2 10.2 0 0 0-3.2 19.9c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-.7-3.6-1.3-.1-.3-.7-1.2-1.1-1.5-.4-.2-1-.7 0-.7.8 0 1.4.8 1.6 1.1.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.7-1.4-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2 1-2.8-.1-.2-.5-1.3.1-2.7 0 0 .9-.3 2.9 1a9.9 9.9 0 0 1 5.2 0c2-1.3 2.9-1 2.9-1 .6 1.4.2 2.5.1 2.7.6.8 1 1.6 1 2.8 0 3.9-2.4 4.8-4.7 5.1.4.3.8 1 .8 2v2.8c0 .3.2.6.7.5A10.2 10.2 0 0 0 12 1.8Z" fill="currentColor"/></symbol>
-  <symbol id="ic-linkedin" viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM2.9 9.9h4.16V21H2.9V9.9Zm7.03 0h3.99v1.52h.06c.56-.98 1.92-2.02 3.95-2.02 4.22 0 5 2.5 5 5.75V21h-4.16v-4.98c0-1.19-.02-2.72-1.75-2.72-1.76 0-2.03 1.29-2.03 2.63V21H9.93V9.9Z" fill="currentColor"/></symbol>
-  <symbol id="ic-youtube" viewBox="0 0 24 24"><path d="M23.2 6.4a2.9 2.9 0 0 0-2-2C19.3 3.9 12 3.9 12 3.9s-7.3 0-9.2.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 .3 12a30 30 0 0 0 .5 5.6 2.9 2.9 0 0 0 2 2c1.9.5 9.2.5 9.2.5s7.3 0 9.2-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 23.7 12a30 30 0 0 0-.5-5.6ZM9.7 15.6V8.4L15.9 12l-6.2 3.6Z" fill="currentColor"/></symbol>
-
-  <!-- product illustrations (2.6:1) -->
-  <symbol id="ui-prompt" viewBox="0 0 320 123">
-    <rect width="320" height="123" fill="#0b0910"/>
-    <rect x="10" y="11" width="42" height="101" rx="7" fill="url(#gWarm)"/>
-    <rect x="58" y="11" width="42" height="101" rx="7" fill="#2c1c15"/>
-    <rect x="106" y="11" width="42" height="101" rx="7" fill="#171319"/>
-    <path d="M16 100c7-16 13-23 21-27s15 5 23 16" fill="none" stroke="#ffe0bd" stroke-width="1.3" opacity=".45"/>
-    <rect x="160" y="14" width="150" height="11" rx="5.5" fill="#ff6a1a"/>
-    <rect x="160" y="35" width="118" height="7" rx="3.5" fill="#ffffff2e"/>
-    <rect x="160" y="47" width="140" height="7" rx="3.5" fill="#ffffff22"/>
-    <rect x="160" y="59" width="96" height="7" rx="3.5" fill="#ffffff1a"/>
-    <rect x="160" y="78" width="92" height="26" rx="13" fill="#ff6a1a" opacity=".9"/>
-    <rect x="178" y="88" width="56" height="6" rx="3" fill="#3a1606" opacity=".6"/>
-  </symbol>
-
-  <symbol id="ui-cart" viewBox="0 0 320 123">
-    <rect width="320" height="123" fill="#0b0910"/>
-    <rect x="10" y="12" width="150" height="99" rx="9" fill="#141019" stroke="#ffffff12"/>
-    <rect x="24" y="24" width="54" height="7" rx="3.5" fill="#ffffff33"/>
-    <rect x="24" y="76" width="11" height="22" rx="3" fill="url(#gWarm)" opacity=".7"/>
-    <rect x="41" y="64" width="11" height="34" rx="3" fill="url(#gWarm)" opacity=".8"/>
-    <rect x="58" y="54" width="11" height="44" rx="3" fill="url(#gWarm)" opacity=".9"/>
-    <rect x="75" y="68" width="11" height="30" rx="3" fill="url(#gWarm)" opacity=".75"/>
-    <rect x="92" y="45" width="11" height="53" rx="3" fill="#ff6a1a"/>
-    <circle cx="128" cy="36" r="16" fill="#3ddc84" opacity=".16"/>
-    <use href="#ic-bag" x="116" y="24" width="24" height="24" color="#3ddc84"/>
-    <rect x="174" y="16" width="136" height="24" rx="8" fill="#141019" stroke="#ffffff10"/>
-    <rect x="186" y="24" width="58" height="7" rx="3.5" fill="#ffffff2a"/>
-    <rect x="286" y="24" width="16" height="7" rx="3.5" fill="#3ddc84" opacity=".8"/>
-    <rect x="174" y="48" width="136" height="24" rx="8" fill="#141019" stroke="#ffffff10"/>
-    <rect x="186" y="56" width="72" height="7" rx="3.5" fill="#ffffff26"/>
-    <rect x="286" y="56" width="16" height="7" rx="3.5" fill="#ff6a1a" opacity=".8"/>
-    <rect x="174" y="80" width="136" height="24" rx="8" fill="#141019" stroke="#ffffff10"/>
-    <rect x="186" y="88" width="48" height="7" rx="3.5" fill="#ffffff20"/>
-    <rect x="286" y="88" width="16" height="7" rx="3.5" fill="#3ddc84" opacity=".8"/>
-  </symbol>
-
-  <symbol id="ui-factory" viewBox="0 0 320 123">
-    <rect width="320" height="123" fill="#08070d"/>
-    <g stroke="#ffffff0d"><path d="M0 30h320M0 62h320M0 94h320M54 0v123M108 0v123M162 0v123M216 0v123M270 0v123"/></g>
-    <path d="M92 30 152 62v38" fill="none" stroke="#ff9a4d" stroke-width="1.4" opacity=".8"/>
-    <path d="M92 30 32 62v38" fill="none" stroke="#ff9a4d" stroke-width="1.4" opacity=".55"/>
-    <path d="M92 30 152 62l60-32-60-32-60 32Z" fill="none" stroke="#ffc27a" stroke-width="1.6"/>
-    <path d="M32 62v38l60 32 60-32V62" fill="none" stroke="#ff8a3d" stroke-width="1.4" opacity=".8"/>
-    <path d="M32 62l60 32 60-32M92 94V30" fill="none" stroke="#ffb06b" stroke-width="1.1" opacity=".6"/>
-    <rect x="200" y="28" width="96" height="8" rx="4" fill="#ffffff26"/>
-    <rect x="200" y="48" width="70" height="8" rx="4" fill="#ff6a1a" opacity=".65"/>
-    <rect x="200" y="68" width="86" height="8" rx="4" fill="#ffffff1c"/>
-    <rect x="200" y="88" width="52" height="8" rx="4" fill="#ffffff14"/>
-  </symbol>
-
-  <symbol id="ui-bot" viewBox="0 0 320 123">
-    <rect width="320" height="123" fill="#06110c"/>
-    <rect x="60" y="14" width="76" height="95" rx="10" fill="#0c1a13" stroke="#ffffff12"/>
-    <rect x="74" y="24" width="40" height="6" rx="3" fill="#ffffff26"/>
-    <rect x="70" y="40" width="34" height="10" rx="5" fill="#1f7a4d"/>
-    <rect x="70" y="56" width="46" height="10" rx="5" fill="#1c2a22"/>
-    <rect x="70" y="72" width="36" height="10" rx="5" fill="#1c2a22"/>
-    <circle cx="196" cy="44" r="26" fill="#25D366" opacity=".16"/>
-    <circle cx="196" cy="44" r="19" fill="#1faa53"/>
-    <use href="#ic-whatsapp" x="186" y="34" width="20" height="20" color="#eafff2"/>
-    <rect x="170" y="78" width="118" height="9" rx="4.5" fill="#ffffff20"/>
-    <rect x="170" y="94" width="80" height="9" rx="4.5" fill="#1faa53" opacity=".55"/>
-    <rect x="228" y="16" width="72" height="9" rx="4.5" fill="#ffffff16"/>
-    <rect x="252" y="32" width="48" height="9" rx="4.5" fill="#25D366" opacity=".45"/>
-  </symbol>
-
-  <symbol id="ui-apk" viewBox="0 0 320 123">
-    <rect width="320" height="123" fill="#0b0910"/>
-    <g transform="rotate(-8 96 62)">
-      <rect x="62" y="10" width="70" height="103" rx="12" fill="#17131c" stroke="#ffffff1a"/>
-      <rect x="68" y="18" width="58" height="87" rx="8" fill="url(#gCool)" opacity=".85"/>
-      <use href="#ic-android" x="85" y="48" width="24" height="24" color="#eaf3ff"/>
-    </g>
-    <g transform="rotate(8 224 62)">
-      <rect x="188" y="10" width="70" height="103" rx="12" fill="#17131c" stroke="#ffffff1a"/>
-      <rect x="194" y="18" width="58" height="87" rx="8" fill="url(#gGreen)" opacity=".85"/>
-      <use href="#ic-android" x="211" y="48" width="24" height="24" color="#eafff2"/>
-    </g>
-    <rect x="142" y="52" width="36" height="8" rx="4" fill="#ffffff22"/>
-    <rect x="142" y="66" width="24" height="8" rx="4" fill="#ffffff14"/>
-  </symbol>
-
-  <symbol id="ui-atlas" viewBox="0 0 320 123">
-    <rect width="320" height="123" fill="#07080f"/>
-    <g stroke="#ffffff0d"><path d="M0 41h320M0 82h320M80 0v123M160 0v123M240 0v123"/></g>
-    <circle cx="92" cy="61" r="41" fill="#0c1024" stroke="#7aa2ff" stroke-opacity=".5"/>
-    <ellipse cx="92" cy="61" rx="16" ry="41" fill="none" stroke="#7aa2ff" stroke-opacity=".35"/>
-    <path d="M51 61h82M60 41h64M60 81h64" fill="none" stroke="#7aa2ff" stroke-opacity=".3"/>
-    <rect x="157" y="26" width="60" height="7" rx="3.5" fill="#7aa2ff" opacity=".55"/>
-    <rect x="157" y="42" width="118" height="7" rx="3.5" fill="#ffffff22"/>
-    <rect x="165" y="58" width="90" height="7" rx="3.5" fill="#ffffff18"/>
-    <rect x="165" y="74" width="104" height="7" rx="3.5" fill="#ffffff14"/>
-    <rect x="157" y="92" width="56" height="12" rx="6" fill="#7aa2ff" opacity=".35"/>
-  </symbol>
-
-  <symbol id="ui-automation" viewBox="0 0 320 123">
-    <rect width="320" height="123" fill="#0a080e"/>
-    <g stroke="#ff8a3d" stroke-opacity=".45" fill="none">
-      <path d="M74 62h44M158 62h44M118 62c22-30 44-30 44 0s22 30 44 0"/>
-    </g>
-    <rect x="30" y="42" width="44" height="40" rx="10" fill="#151018" stroke="#ff9a4d" stroke-opacity=".5"/>
-    <use href="#ic-spark" x="42" y="54" width="20" height="20" color="#ffb65b"/>
-    <rect x="118" y="42" width="44" height="40" rx="10" fill="#151018" stroke="#ff9a4d" stroke-opacity=".5"/>
-    <use href="#ic-cube" x="130" y="54" width="20" height="20" color="#ff9a4d"/>
-    <rect x="206" y="42" width="44" height="40" rx="10" fill="#151018" stroke="#ff9a4d" stroke-opacity=".5"/>
-    <use href="#ic-globe" x="218" y="54" width="20" height="20" color="#ffd39a"/>
-    <rect x="266" y="46" width="36" height="8" rx="4" fill="#ffffff20"/>
-    <rect x="266" y="62" width="24" height="8" rx="4" fill="#3ddc84" opacity=".6"/>
-    <circle cx="66" cy="24" r="4" fill="#3ddc84"/><circle cx="252" cy="98" r="4" fill="#3ddc84"/>
-  </symbol>
-</svg>
-
-<!-- ============ header ============ -->
 <header class="topbar" id="topbar">
-  <a class="brand" href="#top">
-    <span class="brand__mark"><svg viewBox="0 0 24 24" class="brand__flame"><use href="#ic-flame"/></svg></span>
-    <span class="brand__name">shanmugaraj<em>.dev</em></span>
-  </a>
-  <nav class="nav" id="nav">
-    <a href="#top">Home</a>
-    <a href="#systems">Products</a>
-    <a href="#story">Story</a>
-    <a href="#journal">Journal</a>
-    <a href="#contact">Contact</a>
+  <a class="brand" href="#top" aria-label="shanmugaraj.dev home"><span class="brand-mark">◆</span><span>shanmugaraj<span class="brand-muted">.dev</span></span></a>
+  <nav class="nav" id="nav" aria-label="Primary">
+    <a href="#top">Home</a><a href="#systems">Products</a><a href="#story">Story</a><a href="#journal">Journal</a><a href="#contact">Contact</a>
   </nav>
-  <a class="btn btn--ghost topbar__cta" href="#contact">Let&rsquo;s Build</a>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">
-    <span></span><span></span><span></span>
-  </button>
+  <a class="btn btn-small btn-outline topbar-cta" href="#contact">Let's Build</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
 </header>
 
 <main>
-<!-- ============ hero ============ -->
 <section class="hero" id="top">
-  <div class="backdrop">
-    <div class="backdrop__sky"></div>
-    <div class="backdrop__stars"></div>
-    <div class="backdrop__nebula"></div>
-    <div class="backdrop__rock backdrop__rock--left"></div>
-    <div class="backdrop__rock backdrop__rock--right"></div>
-    <div class="backdrop__fog"></div>
-  </div>
-
-  <div class="stage">
-    <div class="scene">
-      <div class="scene__beam"></div>
-      <div class="portal">
-        <span class="portal__ring"></span>
-        <span class="portal__orb"></span>
-        <span class="portal__label">Ideas<br>are never<br>dead</span>
-      </div>
-
-      <div class="figure">
-        <span class="figure__head"></span>
-        <span class="figure__hood"></span>
-        <span class="figure__torso"></span>
-        <span class="figure__pack"></span>
-        <span class="figure__arm figure__arm--l"></span>
-        <span class="figure__arm figure__arm--r"></span>
-        <span class="figure__leg figure__leg--l"></span>
-        <span class="figure__leg figure__leg--r"></span>
-      </div>
-
-      <figure class="verse verse--left">
-        <blockquote>&ldquo;Lazarus, come out.&rdquo;</blockquote>
-        <figcaption>John 11:43</figcaption>
-        <p class="verse__note">Dead things<br>can live again.</p>
-      </figure>
-      <figure class="verse verse--right">
-        <blockquote>&ldquo;The same power that raised Lazarus is still at work.&rdquo;</blockquote>
-        <figcaption>Ephesians 1:19&ndash;20</figcaption>
-        <p class="verse__note">Your ideas. His power.<br>A new beginning.</p>
-      </figure>
-
-      <div class="sidenote sidenote--left">
-        <svg viewBox="0 0 24 24" class="sidenote__spark"><use href="#ic-spark"/></svg>
-        <span>Build what matters</span>
-      </div>
-      <div class="sidenote sidenote--right">
-        <svg viewBox="0 0 24 24" class="sidenote__spark"><use href="#ic-spark"/></svg>
-        <span>Leave good behind</span>
-      </div>
-
-      <div class="hero-copy">
-        <p class="eyebrow eyebrow--center">A creator&rsquo;s calling</p>
-        <h1>What if<br>your ideas <em>never died?</em></h1>
-        <p class="hero-copy__lede">From a single spark to real-world impact. AI, automations, apps and more &mdash; built with purpose.</p>
-        <div class="hero-copy__actions">
-          <a class="btn btn--primary" href="#systems">Explore the Universe</a>
-          <a class="btn btn--text" href="#story"><span class="play"><svg viewBox="0 0 24 24"><use href="#ic-play"/></svg></span>Watch the Story</a>
-        </div>
-      </div>
+  <div class="hero-sky" aria-hidden="true"><div class="sun-ring"></div><div class="horizon"></div><div class="mountain mountain-left"></div><div class="mountain mountain-right"></div><div class="glow-line"></div></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">AI · AUTOMATION · PRODUCTS</p>
+      <h1>Build<br><em>What Matters.</em></h1>
+      <p class="hero-lede">AI, automations, apps and digital products — built with purpose for a better tomorrow.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="#systems">Explore My Work <span>→</span></a><a class="btn btn-text" href="#story"><span class="play">▶</span> Watch Story</a></div>
+      <div class="stats"><div><strong>5+</strong><span>Products</span></div><div><strong>100%</strong><span>Self-Built</span></div><div><strong>∞</strong><span>Possibilities</span></div></div>
     </div>
-
-    <div class="floaties">
-      <a class="fcard float--prompt" href="#p-promptstudio">
-        <div class="fcard__top">
-          <h3>PromptStudio AI</h3>
-          <span class="fcard__go"><svg viewBox="0 0 24 24"><use href="#ic-arrow-ne"/></svg></span>
-        </div>
-        <p>Turn any design into reality next-gen visuals with AI.</p>
-        <div class="thumb"><svg viewBox="0 0 320 123"><use href="#ui-prompt"/></svg></div>
-      </a>
-
-      <a class="fcard float--cart" href="#p-cartlift">
-        <div class="fcard__top">
-          <h3><svg viewBox="0 0 24 24" class="fcard__icon fcard__icon--green"><use href="#ic-bag"/></svg>CartLift</h3>
-          <span class="fcard__go"><svg viewBox="0 0 24 24"><use href="#ic-arrow-ne"/></svg></span>
-        </div>
-        <p>More orders. Happier stores.</p>
-        <div class="thumb"><svg viewBox="0 0 320 123"><use href="#ui-cart"/></svg></div>
-      </a>
-
-      <a class="fcard float--factory" href="#p-factory">
-        <div class="fcard__top">
-          <h3>Project Factory</h3>
-          <span class="fcard__go"><svg viewBox="0 0 24 24"><use href="#ic-arrow-ne"/></svg></span>
-        </div>
-        <p>From idea to product. No limits.</p>
-        <div class="thumb"><svg viewBox="0 0 320 123"><use href="#ui-factory"/></svg></div>
-      </a>
-
-      <a class="fcard float--whatsapp" href="#p-whatsapp">
-        <div class="fcard__top">
-          <h3>WhatsApp Bot</h3>
-          <span class="fcard__go"><svg viewBox="0 0 24 24"><use href="#ic-arrow-ne"/></svg></span>
-        </div>
-        <p>Conversations that convert.</p>
-        <div class="thumb"><svg viewBox="0 0 320 123"><use href="#ui-bot"/></svg></div>
-      </a>
-
-      <a class="fcard float--apk" href="#p-apkforge">
-        <div class="fcard__top">
-          <h3><svg viewBox="0 0 24 24" class="fcard__icon fcard__icon--green"><use href="#ic-android"/></svg>APK Forge</h3>
-          <span class="fcard__go"><svg viewBox="0 0 24 24"><use href="#ic-arrow-ne"/></svg></span>
-        </div>
-        <p>Your app. In everyone&rsquo;s hands.</p>
-        <div class="thumb"><svg viewBox="0 0 320 123"><use href="#ui-apk"/></svg></div>
-      </a>
-
-      <a class="fcard float--atlas" href="#p-atlas">
-        <div class="fcard__top">
-          <h3>Project Atlas</h3>
-          <span class="fcard__go"><svg viewBox="0 0 24 24"><use href="#ic-arrow-ne"/></svg></span>
-        </div>
-        <p>The developer&rsquo;s playground for tomorrow.</p>
-        <div class="thumb"><svg viewBox="0 0 320 123"><use href="#ui-atlas"/></svg></div>
-      </a>
-
-      <figure class="fcard fcard--verse float--verse-left">
-        <blockquote>&ldquo;Faith<br>can move<br>mountains.&rdquo;</blockquote>
-        <figcaption>Matthew 17:20</figcaption>
-      </figure>
-
-      <figure class="fcard fcard--verse float--verse-right">
-        <blockquote>&ldquo;Behold.<br>I am making<br>all things new.&rdquo;</blockquote>
-        <figcaption>Revelation 21:5</figcaption>
-      </figure>
-    </div>
-
-    <div class="stairs">
-      <span class="step">Vision</span>
-      <span class="step">Creation</span>
-      <span class="step">Impact</span>
-      <span class="step">Eternity</span>
-      <svg viewBox="0 0 24 24" class="stairs__cross"><use href="#ic-cross"/></svg>
-    </div>
+    <div class="hero-message"><span>IDEAS</span><span>CREATE</span><span>OPPORTUNITIES</span></div>
   </div>
 </section>
 
-<!-- ============ featured systems ============ -->
 <section class="section featured" id="systems">
   <div class="wrap">
-    <div class="section__head">
-      <div>
-        <p class="eyebrow"><span class="eyebrow__dot"></span>Featured Systems</p>
-        <h2>Tools for a<br><em>Bigger Story</em></h2>
-      </div>
-      <div class="section__aside">
-        <p>Technology is temporary. But what you build can bless, serve and outlive you.</p>
-        <button class="btn btn--ghost" id="viewAll" aria-expanded="false" aria-controls="systemsGrid">View All</button>
-      </div>
-    </div>
-
-    <div class="grid" id="systemsGrid">
-      <article class="pcard reveal" id="p-promptstudio">
-        <div class="pcard__thumb"><svg viewBox="0 0 320 123"><use href="#ui-prompt"/></svg></div>
-        <div class="pcard__head"><h3>PromptStudio AI</h3><span class="badge badge--live">Live</span></div>
-        <p class="pcard__kind">Visual AI Workspace</p>
-        <p class="pcard__desc">Turn any design into detailed prompts and production-ready UI with AI.</p>
-        <a class="pcard__link" href="https://promptstudioai.in" target="_blank" rel="noopener">Open App <svg viewBox="0 0 24 24"><use href="#ic-arrow"/></svg></a>
-      </article>
-
-      <article class="pcard reveal" id="p-cartlift">
-        <div class="pcard__thumb"><svg viewBox="0 0 320 123"><use href="#ui-cart"/></svg></div>
-        <div class="pcard__head"><h3>CartLift</h3><span class="badge badge--building">Building</span></div>
-        <p class="pcard__kind">E-commerce Growth</p>
-        <p class="pcard__desc">Increase order value and recover drop-offs for e-commerce stores.</p>
-        <a class="pcard__link" href="#contact">View Details <svg viewBox="0 0 24 24"><use href="#ic-arrow"/></svg></a>
-      </article>
-
-      <article class="pcard reveal" id="p-whatsapp">
-        <div class="pcard__thumb"><svg viewBox="0 0 320 123"><use href="#ui-bot"/></svg></div>
-        <div class="pcard__head"><h3>WhatsApp Bot</h3><span class="badge badge--live">Live</span></div>
-        <p class="pcard__kind">Business Automation</p>
-        <p class="pcard__desc">Meta Cloud API powered order and chat automation.</p>
-        <a class="pcard__link" href="#contact">View Demo <svg viewBox="0 0 24 24"><use href="#ic-arrow"/></svg></a>
-      </article>
-
-      <article class="pcard reveal" id="p-apkforge">
-        <div class="pcard__thumb"><svg viewBox="0 0 320 123"><use href="#ui-apk"/></svg></div>
-        <div class="pcard__head"><h3>APK Forge</h3><span class="badge badge--building">Building</span></div>
-        <p class="pcard__kind">Web to Android</p>
-        <p class="pcard__desc">Convert your web app into a production-ready Android app.</p>
-        <a class="pcard__link" href="#contact">Learn More <svg viewBox="0 0 24 24"><use href="#ic-arrow"/></svg></a>
-      </article>
-
-      <article class="pcard reveal" id="p-atlas">
-        <div class="pcard__thumb"><svg viewBox="0 0 320 123"><use href="#ui-atlas"/></svg></div>
-        <div class="pcard__head"><h3>Project Atlas</h3><span class="badge badge--strategic">Strategic</span></div>
-        <p class="pcard__kind">GenAI Engineering</p>
-        <p class="pcard__desc">Modular TypeScript system for next-gen AI products.</p>
-        <a class="pcard__link" href="#contact">Explore <svg viewBox="0 0 24 24"><use href="#ic-arrow"/></svg></a>
-      </article>
-
-      <article class="pcard pcard--extra reveal" id="p-factory" hidden>
-        <div class="pcard__thumb"><svg viewBox="0 0 320 123"><use href="#ui-factory"/></svg></div>
-        <div class="pcard__head"><h3>Project Factory</h3><span class="badge badge--strategic">Core</span></div>
-        <p class="pcard__kind">Idea to Product</p>
-        <p class="pcard__desc">Repeatable system that turns validated ideas into polished software.</p>
-        <a class="pcard__link" href="#contact">See the System <svg viewBox="0 0 24 24"><use href="#ic-arrow"/></svg></a>
-      </article>
-
-      <article class="pcard pcard--extra reveal" id="p-automation" hidden>
-        <div class="pcard__thumb"><svg viewBox="0 0 320 123"><use href="#ui-automation"/></svg></div>
-        <div class="pcard__head"><h3>Automation Services</h3><span class="badge badge--live">Serving</span></div>
-        <p class="pcard__kind">Revenue Engine</p>
-        <p class="pcard__desc">Customer-facing AI tools, WhatsApp systems and workflow automation.</p>
-        <a class="pcard__link" href="#contact">Work With Me <svg viewBox="0 0 24 24"><use href="#ic-arrow"/></svg></a>
-      </article>
+    <div class="section-head"><div><p class="eyebrow">FEATURED PRODUCTS</p><h2>Real solutions.<br><em>Real impact.</em></h2></div><div class="section-aside"><p>Tools and systems designed to turn ideas into useful products.</p><button class="btn btn-outline" id="viewAll" aria-expanded="false">View All <span>→</span></button></div></div>
+    <div class="product-grid" id="systemsGrid">
+      <article class="product-card reveal"><div class="product-art art-prompt"><span>AI</span><i></i><b></b></div><div class="product-head"><h3>PromptStudio AI</h3><span class="badge live">Live</span></div><p class="kind">Visual AI Workspace</p><p>Turn ideas and references into detailed prompts and production-ready UI with AI.</p><a href="https://promptstudioai.in" target="_blank" rel="noopener">Open App <span>→</span></a></article>
+      <article class="product-card reveal"><div class="product-art art-cart"><span>₹</span><i></i><i></i><i></i></div><div class="product-head"><h3>CartLift</h3><span class="badge building">Building</span></div><p class="kind">E-commerce Growth</p><p>Increase order value and recover drop-offs with smarter commerce flows.</p><a href="#contact">View Details <span>→</span></a></article>
+      <article class="product-card reveal"><div class="product-art art-bot"><span>WA</span><i></i><i></i><i></i></div><div class="product-head"><h3>WhatsApp Bot</h3><span class="badge live">Live</span></div><p class="kind">Business Automation</p><p>Meta Cloud API powered conversations, order flows and business automation.</p><a href="#contact">View Demo <span>→</span></a></article>
+      <article class="product-card reveal"><div class="product-art art-apk"><span>APK</span><i></i></div><div class="product-head"><h3>APK Forge</h3><span class="badge building">Building</span></div><p class="kind">Web to Android</p><p>Convert a web app into a production-ready Android experience.</p><a href="#contact">Learn More <span>→</span></a></article>
+      <article class="product-card reveal"><div class="product-art art-atlas"><span>ATLAS</span><i></i><i></i></div><div class="product-head"><h3>Project Atlas</h3><span class="badge strategic">Strategic</span></div><p class="kind">GenAI Engineering</p><p>Modular systems for building and scaling next-generation AI products.</p><a href="#contact">Explore <span>→</span></a></article>
+      <article class="product-card extra reveal" hidden><div class="product-art art-factory"><span>FACTORY</span><i></i></div><div class="product-head"><h3>Project Factory</h3><span class="badge strategic">Core</span></div><p class="kind">Idea to Product</p><p>A repeatable system for turning validated ideas into polished software.</p><a href="#contact">See the System <span>→</span></a></article>
+      <article class="product-card extra reveal" hidden><div class="product-art art-auto"><span>AUTO</span><i></i><i></i></div><div class="product-head"><h3>Automation Services</h3><span class="badge live">Serving</span></div><p class="kind">Revenue Engine</p><p>Customer-facing AI tools, WhatsApp systems and workflow automation.</p><a href="#contact">Work With Me <span>→</span></a></article>
     </div>
   </div>
 </section>
 
-<!-- ============ story ============ -->
-<section class="section story" id="story">
-  <div class="wrap story__wrap">
-    <p class="eyebrow eyebrow--center">Story</p>
-    <h2>Turn the unseen<br>into <em>something real.</em></h2>
-    <p class="story__lede">This is a living product universe &mdash; a place where experiments become systems, systems become products, and products create something useful in the real world. Every idea on this page started as a quiet thought that refused to die.</p>
-    <div class="metrics">
-      <div class="metric"><strong>07</strong><span>Creations</span></div>
-      <div class="metric"><strong>01</strong><span>Universe</span></div>
-      <div class="metric"><strong>&infin;</strong><span>Next Chapters</span></div>
-    </div>
-    <figure class="story__verse">
-      <blockquote>&ldquo;Whatever you do, work at it with all your heart.&rdquo;</blockquote>
-      <figcaption>Colossians 3:23</figcaption>
-    </figure>
-  </div>
-</section>
+<section class="capabilities" aria-label="Capabilities"><div class="cap-grid"><div><span>01</span><strong>Create</strong><p>Turn ideas into real products</p></div><div><span>02</span><strong>Automate</strong><p>Save time with smart systems</p></div><div><span>03</span><strong>Scale</strong><p>Build for real impact</p></div><div><span>04</span><strong>Empower</strong><p>Help businesses grow</p></div><div><span>05</span><strong>Leave a Legacy</strong><p>Create value that lasts</p></div></div></section>
 
-<!-- ============ journal ============ -->
-<section class="section journal" id="journal">
-  <div class="wrap">
-    <div class="section__head">
-      <div>
-        <p class="eyebrow"><span class="eyebrow__dot"></span>Journal</p>
-        <h2>Notes from<br><em>the workbench</em></h2>
-      </div>
-      <div class="section__aside">
-        <p>Short notes on building, shipping and keeping the fire alive.</p>
-      </div>
-    </div>
-    <div class="journal__list">
-      <article class="entry reveal">
-        <time datetime="2026-08-14">Aug 14, 2026</time>
-        <h3>Ideas only die when you stop showing up</h3>
-        <p>Most projects don't fail from bad ideas. They fail from abandoned momentum. The fix is smaller sessions, more often.</p>
-      </article>
-      <article class="entry reveal">
-        <time datetime="2026-07-02">Jul 2, 2026</time>
-        <h3>From prompt to product in one weekend</h3>
-        <p>How PromptStudio AI went from a folder of screenshots to a working tool, and what I'd do differently next time.</p>
-      </article>
-      <article class="entry reveal">
-        <time datetime="2026-05-21">May 21, 2026</time>
-        <h3>Building systems that outlive the launch</h3>
-        <p>Launch day is the easy part. What matters is the boring machinery that keeps a product useful six months later.</p>
-      </article>
-    </div>
-  </div>
-</section>
+<section class="section story" id="story"><div class="wrap story-grid"><div><p class="eyebrow">THE WORK</p><h2>From Ideas<br>to <em>Impact.</em></h2></div><div class="story-copy"><p>Every useful product starts with a problem worth solving. I build AI tools, automation systems and digital experiences that move an idea from a rough thought to something people can actually use.</p><div class="metrics"><div><strong>07</strong><span>Creations</span></div><div><strong>01</strong><span>Product Universe</span></div><div><strong>∞</strong><span>Next Chapters</span></div></div><a class="btn btn-primary" href="#contact">Let's Connect <span>→</span></a></div></div></section>
 
-<!-- ============ footer ============ -->
-<footer class="footer" id="contact">
-  <div class="wrap">
-    <div class="contact">
-      <p class="eyebrow eyebrow--center">Contact</p>
-      <h2>Build what matters.<br><em>Leave good behind.</em></h2>
-      <p class="contact__lede">Have an idea that won&rsquo;t leave you alone? Bring it. Let&rsquo;s turn it into something real.</p>
-      <a class="btn btn--primary" href="mailto:contact@promptstudioai.in">Start a Conversation</a>
-    </div>
+<section class="section journal" id="journal"><div class="wrap"><div class="section-head"><div><p class="eyebrow">JOURNAL</p><h2>Notes from<br><em>the workbench.</em></h2></div><div class="section-aside"><p>Short notes on building, shipping and learning.</p></div></div><div class="journal-list"><article class="entry reveal"><time>Aug 14, 2026</time><h3>Ideas only die when you stop showing up</h3><p>Small sessions, consistent shipping and learning from the real world.</p></article><article class="entry reveal"><time>Jul 02, 2026</time><h3>From prompt to product</h3><p>What changes when an experiment becomes a tool people can use.</p></article><article class="entry reveal"><time>May 21, 2026</time><h3>Systems that outlive the launch</h3><p>The boring machinery behind products that keep getting better.</p></article></div></div></section>
 
-    <div class="footer__bar">
-      <div class="footer__brand">
-        <span class="brand__mark"><svg viewBox="0 0 24 24" class="brand__flame"><use href="#ic-flame"/></svg></span>
-        <div>
-          <strong>shanmugaraj.dev</strong>
-          <span>Build. Serve. Leave Good Behind.</span>
-        </div>
-      </div>
-      <nav class="footer__nav">
-        <a href="#top">Home</a>
-        <a href="#systems">Products</a>
-        <a href="#story">Story</a>
-        <a href="#journal">Journal</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="footer__social">
-        <a href="https://x.com" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24"><use href="#ic-x"/></svg></a>
-        <a href="https://github.com/shanmugaraj711-dotcom" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><use href="#ic-github"/></svg></a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><use href="#ic-linkedin"/></svg></a>
-        <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><use href="#ic-youtube"/></svg></a>
-      </div>
-      <blockquote class="footer__quote">
-        &ldquo;Well done, good and faithful builder.&rdquo;
-        <span>Matthew 25:23</span>
-      </blockquote>
-    </div>
-  </div>
-</footer>
+<footer class="footer" id="contact"><div class="wrap"><div class="contact"><p class="eyebrow">LET'S BUILD</p><h2>Have an idea?<br><em>Make it real.</em></h2><p>Bring the problem, the sketch or the rough idea. Let's turn it into something useful.</p><a class="btn btn-primary" href="mailto:contact@promptstudioai.in">Start a Conversation <span>→</span></a></div><div class="footer-bar"><div class="footer-brand"><span class="brand-mark">◆</span><div><strong>shanmugaraj.dev</strong><span>Build. Solve. Create What Matters.</span></div></div><nav><a href="#top">Home</a><a href="#systems">Products</a><a href="#story">Story</a><a href="#journal">Journal</a><a href="#contact">Contact</a></nav><div class="social"><a href="https://x.com" target="_blank" rel="noopener">X</a><a href="https://github.com/shanmugaraj711-dotcom" target="_blank" rel="noopener">GH</a><a href="https://www.linkedin.com" target="_blank" rel="noopener">in</a><a href="https://www.youtube.com" target="_blank" rel="noopener">YT</a></div><p class="footer-quote">A better future is built by those who create it.</p></div><div class="copyright">© 2026 shanmugaraj.dev. All rights reserved.</div></div></footer>
 </main>
-
 <script src="script.js" defer></script>
 </body>
 </html>
