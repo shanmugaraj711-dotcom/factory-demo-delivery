@@ -3,66 +3,492 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#05070b">
-<meta name="description" content="Shanmugaraj — AI products, automations, apps and digital systems built with purpose.">
+<meta name="theme-color" content="#070707">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Shanmugaraj — independent builder of AI products, automation systems and digital experiences.">
 <meta name="author" content="Shanmugaraj">
 <meta property="og:title" content="shanmugaraj.dev — Build What Matters">
-<meta property="og:description" content="AI, automations, apps and digital products built with purpose.">
+<meta property="og:description" content="AI products, automation systems and digital experiences — from a rough idea to something people use.">
 <meta property="og:type" content="website">
 <title>shanmugaraj.dev — Build What Matters</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2305070b'/%3E%3Cpath d='M7 20 15 5l4 8 6 2-11 12-2-8z' fill='%23ff8a3d'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23070707'/%3E%3Cpath d='M7 20 15 5l4 8 6 2-11 12-2-8z' fill='%23ff6a1f'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script>document.documentElement.className+=' js';setTimeout(function(){document.documentElement.classList.add('is-ready')},1600)</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
+
 <header class="topbar" id="topbar">
-  <a class="brand" href="#top" aria-label="shanmugaraj.dev home"><span class="brand-mark">◆</span><span>shanmugaraj<span class="brand-muted">.dev</span></span></a>
+  <a class="brand" href="#top" aria-label="shanmugaraj.dev — back to top">
+    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M7 20 15 5l4 8 6 2-11 12-2-8z"/></svg></span>
+    <span class="brand-name">shanmugaraj<span>.dev</span></span>
+  </a>
   <nav class="nav" id="nav" aria-label="Primary">
-    <a href="#top">Home</a><a href="#systems">Products</a><a href="#story">Story</a><a href="#journal">Field Notes</a><a href="#contact">Contact</a>
+    <ul>
+      <li><a href="#work"><span class="nav-n">01</span>Products</a></li>
+      <li><a href="#capabilities"><span class="nav-n">02</span>Capabilities</a></li>
+      <li><a href="#story"><span class="nav-n">03</span>Story</a></li>
+      <li><a href="#notes"><span class="nav-n">04</span>Field Notes</a></li>
+      <li><a href="#contact"><span class="nav-n">05</span>Contact</a></li>
+    </ul>
+    <a class="nav-mail" href="mailto:contact@promptstudioai.in">contact@promptstudioai.in</a>
   </nav>
-  <a class="btn btn-small btn-outline topbar-cta" href="#contact">Let's Build</a>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  <a class="btn btn-ghost topbar-cta magnetic" href="#contact"><span>Let's build</span><i class="arr" aria-hidden="true">→</i></a>
+  <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
 </header>
 
-<main>
-<section class="hero" id="top">
-  <div class="hero-sky" aria-hidden="true"><div class="sun-ring"></div><div class="horizon"></div><div class="mountain mountain-left"></div><div class="mountain mountain-right"></div><div class="glow-line"></div></div>
-  <div class="hero-inner">
-    <div class="hero-copy">
-      <p class="eyebrow">AI · AUTOMATION · PRODUCTS</p>
-      <h1>Build<br><em>What Matters.</em></h1>
-      <p class="hero-lede">AI, automations, apps and digital products — built with purpose for a better tomorrow.</p>
-      <div class="hero-actions"><a class="btn btn-primary" href="#systems">Explore My Work <span>→</span></a><a class="btn btn-text" href="#story"><span class="play">▶</span> Watch Story</a></div>
-      <div class="stats"><div><strong>5+</strong><span>Products</span></div><div><strong>100%</strong><span>Self-Built</span></div><div><strong>∞</strong><span>Possibilities</span></div></div>
+<main id="main">
+
+<!-- 00 · HERO -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="hero-env" aria-hidden="true">
+    <div class="hero-grid"></div>
+    <div class="hero-light" id="heroLight"></div>
+    <div class="hero-arc"><i></i></div>
+    <div class="frag f1"><em>P/01 · PromptStudio</em><b>prompt.compose()</b><span>image → prompt</span></div>
+    <div class="frag f2"><em>P/04 · WhatsApp Bot</em><b>wa.flow</b><span>message → order</span></div>
+    <div class="frag f3"><em>P/02 · Abacus Buddy</em><b>beads.add()</b><span>count → add</span></div>
+  </div>
+
+  <div class="hero-inner wrap">
+    <div class="hero-meta">
+      <span class="label">Shanmugaraj</span>
+      <span class="label hero-meta-mid">AI products · Automation · Digital experiences</span>
+      <span class="label"><i class="pulse" aria-hidden="true"></i>Building — 2026</span>
     </div>
-    <div class="hero-message"><span>IDEAS</span><span>CREATE</span><span>OPPORTUNITIES</span></div>
+
+    <h1 class="hero-title" id="hero-title">
+      <span class="w"><span>Build</span></span>
+      <span class="w"><span>what</span></span>
+      <span class="w"><span><em>matters.</em></span></span>
+    </h1>
+
+    <div class="hero-foot">
+      <p class="hero-lede">I build <strong>AI products</strong>, <strong>automation systems</strong> and <strong>digital experiences</strong> — from a rough idea to something people actually use.</p>
+
+      <ol class="pipeline" aria-label="Ideas, then create, then opportunities">
+        <li><i class="pl-dot"></i><span class="pl-n">01</span>Ideas</li>
+        <li><i class="pl-dot"></i><span class="pl-n">02</span>Create</li>
+        <li><i class="pl-dot"></i><span class="pl-n">03</span>Opportunities</li>
+      </ol>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary magnetic" href="#work"><span>Explore the work</span><i class="arr" aria-hidden="true">→</i></a>
+        <a class="btn btn-line" href="#story"><span>Read the story</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-bottom wrap" aria-hidden="true">
+    <span class="label">Scroll</span>
+    <span class="scroll-rail"><i></i></span>
+    <span class="label">08 projects · 04 live</span>
   </div>
 </section>
 
-<section class="section featured" id="systems">
+<!-- 01 · PRODUCTS -->
+<section class="section work" id="work" aria-labelledby="work-title">
   <div class="wrap">
-    <div class="section-head"><div><p class="eyebrow">FEATURED PRODUCTS</p><h2>Real solutions.<br><em>Real impact.</em></h2></div><div class="section-aside"><p>Tools and systems designed to turn ideas into useful products.</p><button class="btn btn-outline" id="viewAll" aria-expanded="false">View All <span>→</span></button></div></div>
-    <div class="product-grid" id="systemsGrid">
-      <article class="product-card reveal"><div class="product-art art-prompt"><span>AI</span><i></i><b></b></div><div class="product-head"><h3>PromptStudio AI</h3><span class="badge live">Live</span></div><p class="kind">Visual AI Workspace</p><p>Turn ideas and references into detailed prompts and production-ready UI with AI.</p><a href="https://promptstudioai.in" target="_blank" rel="noopener">Open App <span>→</span></a></article>
-      <article class="product-card reveal"><div class="product-art art-cart"><span>₹</span><i></i><i></i><i></i></div><div class="product-head"><h3>CartLift</h3><span class="badge building">Building</span></div><p class="kind">E-commerce Growth</p><p>Increase order value and recover drop-offs with smarter commerce flows.</p><a href="https://promptstudioai.in" target="_blank" rel="noopener">Open Product <span>→</span></a></article>
-      <article class="product-card reveal"><div class="product-art art-bot"><span>WA</span><i></i><i></i><i></i></div><div class="product-head"><h3>WhatsApp Bot</h3><span class="badge live">Live</span></div><p class="kind">Business Automation</p><p>Meta Cloud API powered conversations, order flows and business automation.</p><a href="https://promptstudioai.in" target="_blank" rel="noopener">Open Product <span>→</span></a></article>
-      <article class="product-card reveal"><div class="product-art art-apk"><span>APK</span><i></i></div><div class="product-head"><h3>APK Forge</h3><span class="badge building">Building</span></div><p class="kind">Web to Android</p><p>Convert a web app into a production-ready Android experience.</p><a href="https://promptstudioai.in" target="_blank" rel="noopener">Open Product <span>→</span></a></article>
-      <article class="product-card reveal"><div class="product-art art-atlas"><span>ATLAS</span><i></i><i></i></div><div class="product-head"><h3>Project Atlas</h3><span class="badge strategic">Strategic</span></div><p class="kind">GenAI Engineering</p><p>Modular systems for building and scaling next-generation AI products.</p><a href="https://promptstudioai.in" target="_blank" rel="noopener">Open Product <span>→</span></a></article>
-      <article class="product-card extra reveal" hidden><div class="product-art art-factory"><span>FACTORY</span><i></i></div><div class="product-head"><h3>Project Factory</h3><span class="badge strategic">Core</span></div><p class="kind">Idea to Product</p><p>A repeatable system for turning validated ideas into polished software.</p><a href="https://promptstudioai.in" target="_blank" rel="noopener">Open Product <span>→</span></a></article>
-      <article class="product-card extra reveal" hidden><div class="product-art art-auto"><span>AUTO</span><i></i><i></i></div><div class="product-head"><h3>Automation Services</h3><span class="badge live">Serving</span></div><p class="kind">Revenue Engine</p><p>Customer-facing AI tools, WhatsApp systems and workflow automation.</p><a href="https://promptstudioai.in" target="_blank" rel="noopener">Open Product <span>→</span></a></article>
+    <header class="sec-head">
+      <p class="sec-index"><span>01</span>Products</p>
+      <h2 id="work-title" class="split">Real solutions.<br><em>Real impact.</em></h2>
+      <p class="sec-intro">Eight builds — four live, some in progress, one still on the drawing board. Each is a system, not a page.</p>
+    </header>
+
+    <p class="tier" data-reveal><span>Flagships</span><span class="tier-n">02</span></p>
+
+    <!-- Flagship 01 -->
+    <article class="flagship card-lit" data-reveal>
+      <div class="flag-copy">
+        <div class="meta"><span class="idx">P/01</span><span class="cat">Visual AI Workspace</span><span class="status s-live"><i></i>Live</span></div>
+        <p class="flag-kicker">Flagship product</p>
+        <h3>PromptStudio <em>AI</em></h3>
+        <p class="flag-desc">Turn ideas and references into detailed prompts and production-ready UI with AI.</p>
+        <dl class="specs">
+          <div><dt>Input</dt><dd>Ideas &amp; visual references</dd></div>
+          <div><dt>Output</dt><dd>Detailed prompts, production-ready UI</dd></div>
+        </dl>
+        <a class="btn btn-primary magnetic" href="https://promptstudioai.in" target="_blank" rel="noopener"><span>Open PromptStudio</span><i class="arr" aria-hidden="true">↗</i></a>
+      </div>
+
+      <div class="ps" aria-hidden="true">
+        <div class="ps-cell ps-ref">
+          <span class="ps-cap">01 · reference</span><span class="ps-cap ps-cap-r">analyzing</span>
+          <div class="ps-img"><i class="ps-sun"></i><i class="ps-ridge"></i><i class="ps-ridge r2"></i><i class="ps-scan"></i><i class="ps-box b1"></i><i class="ps-box b2"></i></div>
+        </div>
+        <div class="ps-cell ps-prompt">
+          <span class="ps-cap">02 · prompt</span>
+          <ul>
+            <li><b>subject</b> mountain ridge, first light</li>
+            <li><b>light</b> low sun, warm rim glow</li>
+            <li><b>lens</b> 35mm, shallow depth</li>
+            <li><b>palette</b> ember · ink · haze</li>
+            <li><b>mood</b><span>quiet, determined<i class="caret"></i></span></li>
+          </ul>
+        </div>
+        <div class="ps-cell ps-ui">
+          <span class="ps-cap">03 · interface</span>
+          <div class="ui">
+            <i class="ui-bar"></i>
+            <i class="ui-hero"></i>
+            <i class="ui-line"></i><i class="ui-line short"></i>
+            <span class="ui-row"><i></i><i></i></span>
+            <i class="ui-btn"></i>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Flagship 02 — Abacus Buddy AI -->
+    <article class="flagship flag-ab card-lit" data-reveal>
+      <div class="flag-copy">
+        <div class="meta"><span class="idx">P/02</span><span class="cat">AI Learning &amp; Skill Game</span><span class="status s-live"><i></i>Live</span></div>
+        <p class="flag-kicker">Flagship product · New</p>
+        <h3>Abacus Buddy <em>AI</em></h3>
+        <p class="flag-desc">An AI-powered skill game for kids and students. Babi, the bead buddy, teaches counting and adding on the abacus — one little step at a time.</p>
+        <dl class="specs">
+          <div><dt>For</dt><dd>Kids &amp; students</dd></div>
+          <div><dt>Path</dt><dd>Start from zero, or take a quick check and skip ahead</dd></div>
+          <div><dt>Language</dt><dd>English &amp; Tamil — audio and on&#8209;screen</dd></div>
+        </dl>
+        <a class="btn btn-mint magnetic" href="https://abacus.promptstudioai.in" target="_blank" rel="noopener"><span>Play Abacus Buddy</span><i class="arr" aria-hidden="true">→</i></a>
+      </div>
+
+      <div class="abv" aria-hidden="true">
+        <div class="abv-top">
+          <span class="abv-buddy"><svg viewBox="0 0 40 40"><path class="r" d="M20 1v7M20 34v5"/><circle cx="20" cy="21" r="13"/><circle class="e" cx="15.5" cy="19.5" r="1.7"/><circle class="e" cx="24.5" cy="19.5" r="1.7"/><path class="m" d="M16 25q4 3.4 8 0"/></svg></span>
+          <p class="abv-say">One little step at a time.</p>
+          <span class="abv-lang"><b>EN</b><span>தமிழ்</span></span>
+        </div>
+        <div class="abacus" id="abacus">
+          <div class="ab-bar"></div>
+          <div class="ab-rod" data-place="2"><i class="bd h"></i><i class="bd e e1"></i><i class="bd e e2"></i><i class="bd e e3"></i><i class="bd e e4"></i><span class="ab-pl">H</span></div>
+          <div class="ab-rod" data-place="1"><i class="bd h on"></i><i class="bd e e1 on"></i><i class="bd e e2"></i><i class="bd e e3"></i><i class="bd e e4"></i><span class="ab-pl">T</span></div>
+          <div class="ab-rod" data-place="0"><i class="bd h on"></i><i class="bd e e1 on"></i><i class="bd e e2 on"></i><i class="bd e e3"></i><i class="bd e e4"></i><span class="ab-pl">O</span></div>
+        </div>
+        <div class="abv-foot">
+          <p class="ab-eq"><span class="ab-a">25</span><span class="ab-op">+</span><span class="ab-b">42</span><span class="ab-op">=</span><b class="ab-r">67</b></p>
+          <ol class="ab-steps"><li class="on"></li><li class="on"></li><li class="on"></li><li></li><li></li></ol>
+        </div>
+      </div>
+    </article>
+
+    <p class="tier" data-reveal><span>The wider system</span><span class="tier-n">06</span></p>
+
+    <div class="bento">
+      <!-- CartLift -->
+      <article class="card card-lit c-cart" data-reveal>
+        <div class="card-vis" aria-hidden="true">
+          <svg viewBox="0 0 400 200" class="svg-cart">
+            <path class="ln" d="M60 96H340"/>
+            <path class="ln ln-drop" d="M200 96c0 46 -20 70 -70 72"/>
+            <path class="ln ln-recover" d="M130 168c60 0 90 -20 70 -72"/>
+            <circle class="nd" cx="60" cy="96" r="18"/><circle class="nd" cx="200" cy="96" r="18"/><circle class="nd nd-hot" cx="340" cy="96" r="18"/>
+            <circle class="nd nd-small" cx="130" cy="168" r="6"/>
+            <rect class="chip" x="22" y="30" width="78" height="26" rx="13"/><text class="t" x="61" y="47" text-anchor="middle">+ add-on</text>
+            <path class="ln ln-thin" d="M61 56V78"/>
+            <text class="t t-dim" x="60" y="136" text-anchor="middle">cart</text>
+            <text class="t t-dim" x="224" y="136" text-anchor="start">checkout</text>
+            <text class="t t-hot" x="340" y="136" text-anchor="middle">paid</text>
+            <text class="t t-hot" x="118" y="172" text-anchor="end">recovered</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="meta"><span class="idx">P/03</span><span class="cat">E-commerce Growth</span><span class="status s-build"><i></i>Building</span></div>
+          <h3>CartLift</h3>
+          <p>Increase order value and recover drop-offs with smarter commerce flows.</p>
+          <a class="card-cta" href="https://promptstudioai.in" target="_blank" rel="noopener">Open product <i class="arr" aria-hidden="true">↗</i></a>
+        </div>
+      </article>
+
+      <!-- WhatsApp Bot -->
+      <article class="card card-lit c-bot" data-reveal>
+        <div class="card-vis" aria-hidden="true">
+          <div class="chat">
+            <p class="msg m-in">Is my order shipped?</p>
+            <p class="msg m-out">Yes — it's out for delivery today.</p>
+            <p class="chips"><span>Track</span><span>Reorder</span><span>Talk to us</span></p>
+            <p class="msg m-in typing"><i></i><i></i><i></i></p>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="meta"><span class="idx">P/04</span><span class="cat">Business Automation</span><span class="status s-live"><i></i>Live</span></div>
+          <h3>WhatsApp Bot</h3>
+          <p>Meta Cloud API powered conversations, order flows and business automation.</p>
+          <a class="card-cta" href="https://promptstudioai.in" target="_blank" rel="noopener">Open product <i class="arr" aria-hidden="true">↗</i></a>
+        </div>
+      </article>
+
+      <!-- APK Forge -->
+      <article class="card card-lit c-apk" data-reveal>
+        <div class="card-vis" aria-hidden="true">
+          <svg viewBox="0 0 400 200" class="svg-apk">
+            <rect class="fr" x="28" y="36" width="168" height="120" rx="10"/>
+            <path class="ln" d="M28 60H196"/>
+            <circle class="dt" cx="42" cy="48" r="3"/><circle class="dt" cx="53" cy="48" r="3"/><circle class="dt" cx="64" cy="48" r="3"/>
+            <text class="t t-dim" x="80" y="52">https://app</text>
+            <rect class="blk" x="44" y="76" width="96" height="10" rx="3"/><rect class="blk dim" x="44" y="94" width="136" height="6" rx="3"/><rect class="blk dim" x="44" y="106" width="112" height="6" rx="3"/><rect class="blk hot" x="44" y="124" width="54" height="16" rx="8"/>
+            <path class="ln ln-flow" d="M206 96H280"/>
+            <path class="ln" d="M272 89l9 7-9 7"/>
+            <text class="t t-hot" x="243" y="84" text-anchor="middle">forge</text>
+            <rect class="fr fr-hot" x="298" y="22" width="76" height="150" rx="14"/>
+            <rect class="blk dim" x="330" y="30" width="12" height="3" rx="1.5"/>
+            <rect class="tile" x="309" y="46" width="24" height="24" rx="6"/><rect class="tile" x="339" y="46" width="24" height="24" rx="6"/>
+            <rect class="tile hot" x="309" y="76" width="24" height="24" rx="6"/><rect class="tile" x="339" y="76" width="24" height="24" rx="6"/>
+            <rect class="blk dim" x="309" y="112" width="54" height="6" rx="3"/><rect class="blk dim" x="309" y="124" width="40" height="6" rx="3"/>
+            <text class="t t-hot" x="336" y="192" text-anchor="middle">.apk</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="meta"><span class="idx">P/05</span><span class="cat">Web to Android</span><span class="status s-build"><i></i>Building</span></div>
+          <h3>APK Forge</h3>
+          <p>Convert a web app into a production-ready Android experience.</p>
+          <a class="card-cta" href="https://promptstudioai.in" target="_blank" rel="noopener">Open product <i class="arr" aria-hidden="true">↗</i></a>
+        </div>
+      </article>
+
+      <!-- Project Factory -->
+      <article class="card card-lit c-factory" data-reveal>
+        <div class="card-vis" aria-hidden="true">
+          <div class="factory">
+            <ol class="stages"><li>Idea</li><li>Spec</li><li>Build</li><li>Validate</li><li>Ship</li></ol>
+            <div class="track"><i class="mover"></i></div>
+            <pre class="log"><span>&gt; source    golden-reference v2</span>
+<span>&gt; validate  <b>passed</b></span>
+<span>&gt; deploy    vercel · production</span></pre>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="meta"><span class="idx">P/06</span><span class="cat">Idea to Product</span><span class="status s-core"><i></i>Core system</span></div>
+          <h3>Project Factory</h3>
+          <p>A repeatable system for turning validated ideas into polished software. <span class="aside-note">This site was delivered through it.</span></p>
+          <a class="card-cta" href="https://promptstudioai.in" target="_blank" rel="noopener">Open product <i class="arr" aria-hidden="true">↗</i></a>
+        </div>
+      </article>
+
+      <!-- Project Atlas — unfinished -->
+      <article class="card c-atlas" data-reveal>
+        <div class="card-vis" aria-hidden="true">
+          <svg viewBox="0 0 400 200" class="svg-atlas">
+            <path class="gd" d="M20 20H380M20 180H380M20 20V180M380 20V180"/>
+            <rect class="md md-on" x="44" y="40" width="96" height="52" rx="6"/>
+            <rect class="md" x="152" y="40" width="96" height="52" rx="6"/>
+            <rect class="md" x="260" y="40" width="96" height="52" rx="6"/>
+            <rect class="md" x="44" y="104" width="148" height="52" rx="6"/>
+            <rect class="md md-on" x="204" y="104" width="152" height="52" rx="6"/>
+            <text class="t t-dim" x="56" y="60">core</text>
+            <text class="t t-dim" x="164" y="60">m-02</text>
+            <text class="t t-dim" x="272" y="60">m-03</text>
+            <text class="t t-dim" x="56" y="124">m-04</text>
+            <text class="t t-dim" x="216" y="124">m-05</text>
+            <path class="gd" d="M44 170H356M44 166V174M356 166V174"/>
+            <text class="t t-dim" x="200" y="194" text-anchor="middle">blueprint · v0</text>
+          </svg>
+          <span class="stamp">Not released</span>
+        </div>
+        <div class="card-body">
+          <div class="meta"><span class="idx">P/07</span><span class="cat">GenAI Engineering</span><span class="status s-plan"><i></i>Strategic · in design</span></div>
+          <h3>Project Atlas</h3>
+          <p>Modular systems for building and scaling next-generation AI products. <span class="aside-note">Unfinished by design — this is the long bet, still being architected.</span></p>
+          <a class="card-cta" href="https://promptstudioai.in" target="_blank" rel="noopener">Follow the direction <i class="arr" aria-hidden="true">↗</i></a>
+        </div>
+      </article>
+
+      <!-- Automation Services -->
+      <article class="card card-lit c-auto" data-reveal>
+        <div class="card-vis" aria-hidden="true">
+          <svg viewBox="0 0 400 200" class="svg-auto">
+            <path class="ln ln-flow" d="M84 100H176"/>
+            <path class="ln ln-flow" d="M224 100C262 100 262 44 300 44"/>
+            <path class="ln ln-flow" d="M224 100H300"/>
+            <path class="ln ln-flow" d="M224 100C262 100 262 156 300 156"/>
+            <rect class="fr" x="20" y="82" width="64" height="36" rx="18"/><text class="t" x="52" y="104" text-anchor="middle">trigger</text>
+            <circle class="hub" cx="200" cy="100" r="26"/><text class="t t-ink" x="200" y="104" text-anchor="middle">AI</text>
+            <rect class="fr" x="300" y="28" width="82" height="32" rx="16"/><text class="t" x="341" y="48" text-anchor="middle">message</text>
+            <rect class="fr" x="300" y="84" width="82" height="32" rx="16"/><text class="t" x="341" y="104" text-anchor="middle">record</text>
+            <rect class="fr" x="300" y="140" width="82" height="32" rx="16"/><text class="t" x="341" y="160" text-anchor="middle">notify</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="meta"><span class="idx">P/08</span><span class="cat">Revenue Engine</span><span class="status s-live"><i></i>Serving</span></div>
+          <h3>Automation Services</h3>
+          <p>Customer-facing AI tools, WhatsApp systems and workflow automation.</p>
+          <a class="card-cta" href="https://promptstudioai.in" target="_blank" rel="noopener">Open product <i class="arr" aria-hidden="true">↗</i></a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="capabilities" aria-label="Capabilities"><div class="cap-grid"><div><span>01</span><strong>Awaken</strong><p>Bring hidden ideas to life</p></div><div><span>02</span><strong>Rise</strong><p>Move forward with purpose</p></div><div><span>03</span><strong>Restore</strong><p>Turn broken starts into progress</p></div><div><span>04</span><strong>Serve</strong><p>Build things that help people</p></div><div><span>05</span><strong>Endure</strong><p>Create value that outlives the moment</p></div></div></section>
+<!-- 02 · CAPABILITIES -->
+<section class="section caps" id="capabilities" aria-labelledby="caps-title">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="sec-index"><span>02</span>Capabilities</p>
+      <h2 id="caps-title" class="split">What I <em>build.</em></h2>
+      <p class="sec-intro">Six disciplines, one practice: find the problem, design the system, ship the thing.</p>
+    </header>
 
-<section class="section story" id="story"><div class="wrap story-grid"><div><p class="eyebrow">THE WORK</p><h2>From Ideas<br>to <em>Impact.</em></h2></div><div class="story-copy"><p>Every useful product starts with a problem worth solving. I build AI tools, automation systems and digital experiences that move an idea from a rough thought to something people can actually use.</p><div class="metrics"><div><strong>07</strong><span>Creations</span></div><div><strong>01</strong><span>Product Universe</span></div><div><strong>∞</strong><span>Next Chapters</span></div></div><a class="btn btn-primary" href="#contact">Let's Connect <span>→</span></a></div></div></section>
+    <ol class="cap-list">
+      <li class="cap" data-reveal>
+        <span class="cap-n">01</span>
+        <h3>AI Products</h3>
+        <p>Tools where AI does real work — visual intelligence, prompt systems, generation.</p>
+        <span class="cap-tags"><span>PromptStudio AI</span><span>Project Atlas</span></span>
+      </li>
+      <li class="cap" data-reveal>
+        <span class="cap-n">02</span>
+        <h3>Learning Games</h3>
+        <p>AI and play working together — skills taught step by step, in the learner's own language.</p>
+        <span class="cap-tags"><span>Abacus Buddy AI</span></span>
+      </li>
+      <li class="cap" data-reveal>
+        <span class="cap-n">03</span>
+        <h3>Automation Systems</h3>
+        <p>Conversations, order flows and workflows that keep running without babysitting.</p>
+        <span class="cap-tags"><span>WhatsApp Bot</span><span>Automation Services</span></span>
+      </li>
+      <li class="cap" data-reveal>
+        <span class="cap-n">04</span>
+        <h3>Commerce Flows</h3>
+        <p>Checkout journeys that lift order value and bring drop-offs back.</p>
+        <span class="cap-tags"><span>CartLift</span></span>
+      </li>
+      <li class="cap" data-reveal>
+        <span class="cap-n">05</span>
+        <h3>Apps &amp; Platforms</h3>
+        <p>Web apps and their Android counterparts, built end to end.</p>
+        <span class="cap-tags"><span>APK Forge</span></span>
+      </li>
+      <li class="cap" data-reveal>
+        <span class="cap-n">06</span>
+        <h3>Product Systems</h3>
+        <p>Repeatable machinery that turns validated ideas into polished software.</p>
+        <span class="cap-tags"><span>Project Factory</span></span>
+      </li>
+    </ol>
+  </div>
+</section>
 
-<section class="section journal" id="journal"><div class="wrap"><div class="section-head"><div><p class="eyebrow">FIELD NOTES</p><h2>Behind the<br><em>build.</em></h2></div><div class="section-aside"><p>Short notes on building, shipping and learning.</p></div></div><div class="journal-list"><article class="entry reveal"><time>Aug 14, 2026</time><h3>Ideas only die when you stop showing up</h3><p>Small sessions, consistent shipping and learning from the real world.</p></article><article class="entry reveal"><time>Jul 02, 2026</time><h3>From prompt to product</h3><p>What changes when an experiment becomes a tool people can use.</p></article><article class="entry reveal"><time>May 21, 2026</time><h3>Systems that outlive the launch</h3><p>The boring machinery behind products that keep getting better.</p></article></div></div></section>
+<!-- 03 · STORY -->
+<section class="section story" id="story" aria-labelledby="story-title">
+  <div class="wrap">
+    <p class="sec-index"><span>03</span>Story</p>
+    <p class="statement" id="statement">I don't just make websites. I build systems, products and experiments — and the machinery that keeps them getting better.</p>
 
-<footer class="footer" id="contact"><div class="wrap"><div class="contact"><p class="eyebrow">LET'S BUILD</p><h2>Have an idea?<br><em>Make it real.</em></h2><p>Bring the problem, the sketch or the rough idea. Let's turn it into something useful.</p><a class="btn btn-primary" href="mailto:contact@promptstudioai.in">Start a Conversation <span>→</span></a></div><div class="footer-bar"><div class="footer-brand"><span class="brand-mark">◆</span><div><strong>shanmugaraj.dev</strong><span>Build. Solve. Create What Matters.</span></div></div><nav><a href="#top">Home</a><a href="#systems">Products</a><a href="#story">Story</a><a href="#journal">Field Notes</a><a href="#contact">Contact</a></nav><div class="social"><a href="https://x.com" target="_blank" rel="noopener">X</a><a href="https://github.com/shanmugaraj711-dotcom" target="_blank" rel="noopener">GH</a><a href="https://www.linkedin.com" target="_blank" rel="noopener">in</a><a href="https://www.youtube.com" target="_blank" rel="noopener">YT</a></div><p class="footer-quote">A better future is built by those who create it.</p></div><div class="copyright">© 2026 shanmugaraj.dev. All rights reserved.</div></div></footer>
+    <div class="story-grid">
+      <div class="story-aside">
+        <div class="story-sticky">
+          <h2 id="story-title" class="split">From ideas<br><em>to impact.</em></h2>
+          <ol class="rail" aria-hidden="true"><li>Idea</li><li>System</li><li>Product</li><li>Next</li></ol>
+        </div>
+      </div>
+
+      <ol class="chapters">
+        <li class="chapter" data-step="0">
+          <p class="ch-n">Chapter 01 — Idea</p>
+          <h3>Every useful product starts with a problem worth solving.</h3>
+          <p>Not a trend, not a template. A real friction someone feels — and a rough thought about how it could be different.</p>
+        </li>
+        <li class="chapter" data-step="1">
+          <p class="ch-n">Chapter 02 — System</p>
+          <h3>Before the product, the machinery.</h3>
+          <p>Project Factory exists so that good ideas don't depend on luck: a repeatable path from idea to spec to validated, deployed software.</p>
+        </li>
+        <li class="chapter" data-step="2">
+          <p class="ch-n">Chapter 03 — Product</p>
+          <h3>Then, tools people actually use.</h3>
+          <p>PromptStudio AI puts creative AI to work. Abacus Buddy AI brings AI into learning through play. WhatsApp automation and client workflows are live. CartLift and APK Forge are on the bench, being built properly.</p>
+        </li>
+        <li class="chapter" data-step="3">
+          <p class="ch-n">Chapter 04 — Next</p>
+          <h3>Project Atlas is the long bet.</h3>
+          <p>Modular foundations for the next generation of AI products. It is unfinished — deliberately. Some things are worth taking the time to get right.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="metrics">
+      <div><strong data-count="8">08</strong><span>Creations</span></div>
+      <div><strong data-count="4">04</strong><span>Live today</span></div>
+      <div><strong data-count="2">02</strong><span>In the build</span></div>
+      <div><strong data-count="1">01</strong><span>Product universe</span></div>
+    </div>
+
+    <div class="principles">
+      <p class="label">Principles</p>
+      <ul>
+        <li><b>Awaken</b><span>Bring hidden ideas to life</span></li>
+        <li><b>Rise</b><span>Move forward with purpose</span></li>
+        <li><b>Restore</b><span>Turn broken starts into progress</span></li>
+        <li><b>Serve</b><span>Build things that help people</span></li>
+        <li><b>Endure</b><span>Create value that outlives the moment</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 04 · FIELD NOTES -->
+<section class="section notes" id="notes" aria-labelledby="notes-title">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="sec-index"><span>04</span>Field Notes</p>
+      <h2 id="notes-title" class="split">Behind the <em>build.</em></h2>
+      <p class="sec-intro">Short notes on building, shipping and learning — written between sessions.</p>
+    </header>
+
+    <div class="journal">
+      <article class="note" data-reveal>
+        <div class="note-meta"><span class="note-n">N°003</span><time datetime="2026-08-14">14 Aug 2026</time><span class="note-tag">Practice</span></div>
+        <h3>Ideas only die when you stop showing up.</h3>
+        <p>Small sessions, consistent shipping and learning from the real world.</p>
+        <span class="note-margin" aria-hidden="true">show up → ship → learn ↺</span>
+      </article>
+      <article class="note" data-reveal>
+        <div class="note-meta"><span class="note-n">N°002</span><time datetime="2026-07-02">02 Jul 2026</time><span class="note-tag">Product</span></div>
+        <h3>From prompt to product.</h3>
+        <p>What changes when an experiment becomes a tool people can use.</p>
+        <span class="note-margin" aria-hidden="true">experiment ≠ product</span>
+      </article>
+      <article class="note" data-reveal>
+        <div class="note-meta"><span class="note-n">N°001</span><time datetime="2026-05-21">21 May 2026</time><span class="note-tag">Systems</span></div>
+        <h3>Systems that outlive the launch.</h3>
+        <p>The boring machinery behind products that keep getting better.</p>
+        <span class="note-margin" aria-hidden="true">launch is day one</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 05 · CONTACT -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="contact-env" aria-hidden="true"><div class="contact-arc"><i></i></div><div class="hero-grid"></div></div>
+  <div class="wrap contact-inner">
+    <p class="sec-index"><span>05</span>Contact</p>
+    <h2 id="contact-title" class="contact-title">
+      <span class="ct-q">Have an idea?</span>
+      <span class="ct-a split">Make it <em>real.</em></span>
+    </h2>
+    <p class="contact-lede">Bring the problem, the sketch or the rough idea. Let's turn it into something useful.</p>
+    <div class="contact-actions">
+      <a class="btn btn-primary btn-xl magnetic" href="mailto:contact@promptstudioai.in"><span>Start a conversation</span><i class="arr" aria-hidden="true">→</i></a>
+      <button class="copy" type="button" id="copyMail" data-mail="contact@promptstudioai.in"><span class="copy-mail">contact@promptstudioai.in</span><span class="copy-state" aria-live="polite">Copy</span></button>
+    </div>
+  </div>
+
+  <footer class="footer wrap">
+    <p class="footer-quote">A better future is built by those who create it.</p>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#work">Products</a><a href="#capabilities">Capabilities</a><a href="#story">Story</a><a href="#notes">Field Notes</a>
+      <a href="https://github.com/shanmugaraj711-dotcom" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
+    <p class="copyright"><span>© 2026 shanmugaraj.dev</span><a href="#top" class="to-top">Back to top ↑</a></p>
+  </footer>
+</section>
+
 </main>
 <script src="script.js" defer></script>
 </body>
